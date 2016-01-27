@@ -41,8 +41,8 @@
 
     <div class="container">
 <?php
-	$final = '';
 	if(isset($_POST['submit'])):
+	$final = '';
 		foreach($_POST['question'] as $key => $value):
 			foreach($QUESTIONS[$key]['weight'][$value] as $vitamin => $value):
 				$final[$vitamin] += $value;
